@@ -31,6 +31,9 @@ html {
   --colorBlack: #000000;
   --colorHalfBlack: #333333;
   --colorBackgroundBlack: #343a40bd;
+
+  --colorBackgroundOverlay: #00000070;
+  --colorWhiteOverlay: rgba(212, 210, 212, 1);
 }
 
 /* Navbar */
@@ -122,4 +125,49 @@ html {
   .overview-para {
     text-align: justify !important;
   }
+}
+
+/* Features */
+
+#features_section {
+  background: url("../img/backgrounds/features.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 970px; */
+  background-attachment: fixed;
+}
+.features-overlay {
+  background: var(--colorBackgroundOverlay);
+  /* height: 970px; */
+  padding: 40px 0px;
+}
+.features-inner {
+  color: var(--colorWhite);
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+.features-inner ul {
+  padding-left: 13px;
+}
+.ame-copy {
+  text-align: center;
+  font-size: 18px !important;
+  color: var(--colorSecondary) !important;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.features-inner h4 {
+  font-size: 1.3em;
+}
+
+.read_more {
+  background-color: transparent;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 0;
+  width: fit-content;
+  padding-left: 10px;
+  color: var(--colorWhite);
 }
