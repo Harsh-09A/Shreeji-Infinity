@@ -105,10 +105,21 @@ html {
 
 .carousel-item img {
   min-height: 80vh;
+  max-height: 80vh;
   width: 100% !important;
   object-fit: cover; /* REMOVE*/
 }
 
 .carousel-indicators .active {
   background-color: var(--colorSecondary) !important;
+}
+
+/* Overview */
+.overview-para {
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .overview-para {
+    text-align: justify !important;
+  }
 }
