@@ -215,3 +215,29 @@ html {
 .floor-img img {
   border: 1px solid var(--colorPrimary) !important;
 }
+
+/* Configuration */
+
+.config-inner {
+  text-align: center;
+  font-weight: normal;
+  padding: 10px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 0px 7px 0px var(--colorWhiteOverlay);
+  -moz-box-shadow: 0px 0px 7px 0px var(--colorWhiteOverlay);
+  box-shadow: 0px 0px 7px 0px var(--colorWhiteOverlay);
+  border-radius: 30px 0px 30px 0px;
+}
+.config-price {
+  background: var(--colorSecondary);
+  width: 75%;
+  margin: 15px auto;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 15px 0px;
+}
+
+.config-price a {
+  text-decoration: none;
+  color: var(--colorWhite);
+}
