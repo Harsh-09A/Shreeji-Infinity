@@ -171,3 +171,47 @@ html {
   padding-left: 10px;
   color: var(--colorWhite);
 }
+
+#gallery_section .nav > li > a,
+#amenities_section .nav > li > a,
+#walkthrough_section .nav > li > a {
+  background: var(--colorWhite);
+  color: var(--colorSecondary) !important;
+  border-radius: 60px;
+  text-align: center;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0.5px solid var(--colorBorderWhite);
+  border-radius: 60px;
+  box-shadow: 0 4px 8px 0 var(--colorBackgroundOverlay);
+  margin: 10px;
+}
+
+#gallery_section .nav > li > a:hover,
+#gallery_section .nav > li > a:focus,
+#gallery_section .nav .active,
+#amenities_section .nav > li > a:hover,
+#amenities_section .nav > li > a:focus,
+#amenities_section .nav .active,
+#walkthrough_section .nav > li > a:hover,
+#walkthrough_section .nav > li > a:focus,
+#walkthrough_section .nav .active {
+  background: var(--colorPrimary);
+  color: var(--colorWhite) !important;
+}
+
+/* Gallery */
+.gal-img {
+  /* width: 19em !important; */
+  height: 200px;
+}
+.gal-img img {
+  width: 100% !important;
+  height: 100%;
+}
+
+.floor-img img {
+  border: 1px solid var(--colorPrimary) !important;
+}
