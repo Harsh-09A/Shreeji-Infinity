@@ -299,3 +299,49 @@ html {
   text-decoration: none;
   color: var(--colorWhite);
 }
+/* Amenities */
+
+/* WalkThrough */
+
+.walkthrough_container img {
+  object-fit: fill;
+}
+
+.virtual-visit {
+  height: 400px;
+}
+
+.bg-image {
+  background-image: url("../img/backgrounds/walkthrough.jpg");
+  height: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.tour-img {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-btn {
+  font-size: 4vw;
+}
+.overlay-info:hover {
+  transform: scale(0.9);
+  transition: ease-in-out;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+/* For Mobile */
+@media only screen and (max-width: 990px) {
+  .play-btn {
+    font-size: 50px;
+  }
+}
