@@ -382,3 +382,114 @@ html {
     margin-top: 2em;
   }
 }
+
+/* About */
+#about_section {
+  background: url("../img/backgrounds/aboutgroup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 970px; */
+  background-attachment: fixed;
+  padding: 0 !important;
+}
+.about_overlay {
+  background: var(--colorBackgroundOverlay);
+  /* height: 970px; */
+  padding: 0;
+}
+#about_section .sub-heading {
+  color: var(--colorSecondary);
+}
+
+.form-label {
+  display: none;
+}
+.inputStyle {
+  font-size: 1em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.submit-btn,
+.submit-btn:hover,
+.submit-btn:focus-visible,
+.submit-btn:active {
+  background-color: var(--colorSecondary) !important;
+  border: none !important;
+}
+@media screen and (max-width: 600px) {
+  .enquire-section {
+    padding: 0 !important;
+  }
+  .about-para-container {
+    padding: 2em !important;
+    padding-top: 2em;
+  }
+}
+
+/* Footer */
+#footer {
+  background-color: var(--colorBlack);
+  padding: 40px 20px;
+}
+.qrcode {
+  text-align: center;
+  margin: 10px 20px;
+  color: var(--colorWhite);
+}
+
+.qrcode img {
+  /* display: block;
+  margin: auto; */
+  width: 100px;
+  /* margin-bottom: 10px; */
+}
+
+@media screen and (min-width: 990px) {
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+}
+
+/* Action Footer */
+.action-footer-container {
+  margin: 0;
+  padding: 0;
+}
+.action-footer {
+  margin: 0;
+  padding: 7px;
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+  cursor: pointer;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  font-size: 0.8em;
+}
+
+.action-footer li {
+  border-left: 1px solid var(--colorBlack);
+}
+
+.action-footer li:first-child {
+  border-left: none !important;
+}
+/* For Desktop */
+@media only screen and (min-width: 990px) {
+  .action-footer {
+    display: none;
+  }
+}
+
+/* Tab Buttons */
+.tab-buttons li {
+  width: 18em;
+}
+@media screen and (max-width: 600px) {
+  .tab-buttons {
+    justify-content: center;
+  }
+  .tab-buttons li {
+    width: 90vw;
+  }
+}

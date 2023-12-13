@@ -1067,6 +1067,273 @@
           </div>
         </div>
       </section>
+
+      <!-- About Section -->
+      <section id="about_section" class="container-fluid p-4 mt-3">
+        <div class="about_overlay">
+          <div class="container pt-2">
+            <div class="row">
+              <div class="col-12 col-md-6 p-5 about-para-container">
+                <div class="text-center">
+                  <h3 class="section-heading text-white">Oberoi Forestville</h3>
+                  <h5 class="sub-heading text-center">Oberoi Realty</h5>
+                  <img src="img/logo/logo_white.webp" alt="" width="150px" />
+                  <div class="text-white about-para">
+                    <p>
+                      Spaces touch life in myriad ways. At Oberoi Realty, we
+                      ensure that the relationship between these spaces and the
+                      lives ensconced in or around them feel truly enriched.
+                      Over the past four decades, we have built an unparalleled
+                      brand repute through our aesthetic design and consistent
+                      quality construction that are at par with international
+                      benchmarks. Innovation in our offerings alongside an
+                      emphasis on contemporary architecture, strong project
+                      execution, and partnerships with the best across the
+                      world, position us as pioneers of luxurious living.
+                    </p>
+                    <span id="dots8" style="display: inline"></span>
+                    <span id="more8" style="display: none">
+                      <p>
+                        For over four decades now, Oberoi Realty has been an
+                        insignia of trust, transparency, cutting-edge technology
+                        and differentiated service in the Real Estate sector in
+                        Mumbai. Rooted in values, our growth and respectability
+                        have both been built on adherence to our vision, mission
+                        and the six pillars we stand on, in all we do and
+                        deliver.
+                      </p>
+                    </span>
+                  </div>
+                  <button
+                    onclick="toggleContent('dots8','more8', 'myBtn8')"
+                    class="read_more"
+                    id="myBtn8">
+                    Read More
+                  </button>
+                  <br />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 p-5">
+                <div class="text-center">
+                  <h3 class="section-heading text-white">CONTACT US</h3>
+                  <!-- Form -->
+                  <div class="enquire-section ps-5 pe-5">
+                    <div class="container">
+                      <form id="contact-form" class="text-center">
+                        <div class="mb-3">
+                          <label for="user_name" class="form-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control inputStyle shadow-none"
+                            name="user_name"
+                            id="user_name"
+                            placeholder="Name"
+                            autocomplete="off"
+                            required />
+                        </div>
+                        <div class="mb-3">
+                          <label for="user_email" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control inputStyle shadow-none"
+                            name="user_email"
+                            id="user_email"
+                            placeholder="Email Address"
+                            autocomplete="off" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="contact_number" class="form-label"
+                            >Phone Number</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control inputStyle shadow-none"
+                            id="contact_number"
+                            name="contact_number"
+                            pattern="[0-9]{10}"
+                            placeholder="Phone Number"
+                            oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                            oninput="setCustomValidity('')"
+                            required />
+                        </div>
+
+                        <button
+                          type="submit"
+                          class="btn btn-primary submit-btn w-100">
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="container text-center text-white">
+          <div class="d-flex justify-content-center">
+            <div class="qrcode">
+              <img src="img/qr/qr.jpg" class="" />
+              <!-- <p>
+              SAI WORLD CITY <br />
+              PHASE I - P52000006318
+            </p> -->
+            </div>
+          </div>
+          <div>
+            <p>MahaRERA Registration No.: P51700050312</p>
+            <img src="img/extras/maharera-new.webp" alt="" />
+            <p>
+              <a
+                href="https://maharera.mahaonline.gov.in"
+                style="color: #fff; text-decoration: none"
+                >maharera.mahaonline.gov.in</a
+              >
+            </p>
+            <p>Site Address :</p>
+
+            <p>
+              Disclaimer : All the specification, design, facilities,
+              dimensions, etc. are subject to the approval of the respective
+              authorities & developers and would be changed if necessary. The
+              discretion remains with the developers.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Mobile Footer Fixed Button -->
+      <div class="container-fluid fixed-bottom action-footer-container">
+        <ul class="nav nav-fill action-footer">
+          <li class="nav-item ps-1">
+            <a
+              onclick="return gtag_report_conversion('https://wa.me/919768478650');"
+              href="https://wa.me/919768478650"
+              class="text-decoration-none text-white">
+              <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+            </a>
+          </li>
+          <li class="nav-item ps-1">
+            <a
+              onclick="return gtag_report_conversion('tel:+919768478650');"
+              href="tel:+919768478650"
+              class="text-decoration-none text-white">
+              <i class="fa-solid fa-phone me-2"></i> Call Us
+            </a>
+          </li>
+
+          <li
+            class="nav-item"
+            data-bs-toggle="modal"
+            data-bs-target="#popupModal">
+            <i class="fa-solid fa-download nav-icon"></i> Brochure
+          </li>
+        </ul>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="popupModal"
+        tabindex="-1"
+        aria-labelledby="ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Title -->
+            <div class="modal-header">
+              <!-- <h1 class="modal-title fs-5" id="ModalLabel">Modal title</h1> -->
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <div class="container text-center">
+                <img src="img/logo/logo.png" alt="" height="50px" />
+                <p class="mt-2">Register Here And Avail The Best Offers!!</p>
+              </div>
+              <div class="container">
+                <!--Enquire Form  -->
+                <div class="enquire-section">
+                  <span class="d-block text-center fw-bold my-2">
+                    Get The Best Quote
+                  </span>
+                  <div class="container">
+                    <!-- Form -->
+                    <form id="contact-form-modal" class="text-center">
+                      <div class="mb-3">
+                        <label for="user_name_modal" class="form-label"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control inputStyle shadow-none"
+                          name="user_name"
+                          id="user_name_modal"
+                          placeholder="Name"
+                          autocomplete="off"
+                          required />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="user_email_modal" class="form-label"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control inputStyle shadow-none"
+                          name="user_email"
+                          id="user_email_modal"
+                          placeholder="Email Address"
+                          autocomplete="off" />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="contact_number_modal" class="form-label"
+                          >Phone Number</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control inputStyle shadow-none"
+                          name="contact_number"
+                          id="contact_number_modal"
+                          pattern="[0-9]{10}"
+                          placeholder="Phone Number"
+                          oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                          oninput="setCustomValidity('')"
+                          required />
+                      </div>
+
+                      <button type="submit" class="btn btn-primary submit-btn">
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Jquery -->
+      <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
     </main>
   </body>
 </html>
