@@ -110,7 +110,6 @@ html {
   min-height: 80vh;
   max-height: 80vh;
   width: 100% !important;
-  object-fit: cover; /* REMOVE*/
 }
 
 .carousel-indicators .active {
@@ -125,6 +124,65 @@ html {
   .overview-para {
     text-align: justify !important;
   }
+}
+
+/* Highlights */
+.highlights li:before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: var(--colorPrimary);
+  position: absolute;
+  left: 16px;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.highlights li::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 0;
+  background: var(--colorPrimary);
+  top: 0;
+  z-index: 1;
+  transition: ease all 0.5s;
+}
+
+.highlights li {
+  background: #eaeaea;
+  margin-bottom: 15px;
+  padding: 15px 10px 15px 30px;
+  position: relative;
+  list-style: none;
+}
+
+.highlights {
+  content: "";
+  padding-left: 0;
+}
+
+.highlights li:hover::after {
+  width: 100%;
+  transition: ease all 0.5s;
+}
+
+.highlights li:hover:before {
+  background: var(--colorWhite);
+  transition: ease all 0.5s;
+}
+
+.highlights li:hover {
+  color: var(--colorWhite);
+  transition: ease all 0.5s;
+}
+
+.highlights li span {
+  position: relative;
+  z-index: 2;
+  padding-left: 5px;
 }
 
 /* Features */
@@ -177,14 +235,14 @@ html {
 #walkthrough_section .nav > li > a {
   background: var(--colorWhite);
   color: var(--colorSecondary) !important;
-  border-radius: 60px;
+
   text-align: center;
   padding: 10px 40px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
   border: 0.5px solid var(--colorBorderWhite);
-  border-radius: 60px;
+  /* border-radius: 60px; */
   box-shadow: 0 4px 8px 0 var(--colorBackgroundOverlay);
   margin: 10px;
 }
