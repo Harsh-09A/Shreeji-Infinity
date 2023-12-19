@@ -22,9 +22,16 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 
+#254c8e
+#0c86c8
+#b38e45
+#d1af67
+*/
+
 :root {
-  --colorPrimary: #712a92;
-  --colorSecondary: #ed1557;
+  --colorPrimary: #b38e45;
+  --colorSecondary: #254c8e;
   --colorWhite: #ffffff;
   --colorOffWhite: #f7f7f7;
   --colorBorderWhite: #dbe4e9;
