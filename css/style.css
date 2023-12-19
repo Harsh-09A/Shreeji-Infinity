@@ -405,7 +405,8 @@ html {
   padding: 0;
 }
 #about_section .sub-heading {
-  color: var(--colorSecondary);
+  color: var(--colorPrimary);
+  font-size: 1.5em;
 }
 
 .form-label {
