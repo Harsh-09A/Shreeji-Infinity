@@ -123,6 +123,19 @@ html {
   background-color: var(--colorSecondary) !important;
 }
 
+/* Desktop */
+@media only screen and (min-width: 990px) {
+  .mobile-slider {
+    display: none;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 990px) {
+  .desktop-slider {
+    display: none;
+  }
+}
+
 /* Overview */
 .overview-para {
   font-size: 14px;
@@ -224,7 +237,7 @@ html {
 }
 
 .features-inner h4 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .read_more {
@@ -359,7 +372,6 @@ html {
   padding-bottom: 25px;
 }
 .locations-left {
-  height: 524px;
   overflow-y: auto;
   text-align: start;
 }
@@ -382,6 +394,9 @@ html {
 .near-location img {
   width: 50px;
   height: 50px;
+}
+.nopadding {
+  padding: 0;
 }
 
 @media screen and (max-width: 600px) {
