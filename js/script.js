@@ -19,7 +19,7 @@ Fancybox.bind('[data-fancybox="external_amenities"]', {
 $(window).ready(function () {
   setTimeout(function () {
     $("#popupModal").modal("show");
-  }, 3000);
+  }, 5000);
 });
 
 // Toggle Content Button
