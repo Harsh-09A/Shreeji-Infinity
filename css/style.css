@@ -41,6 +41,7 @@ html {
 
   --colorBackgroundOverlay: #00000070;
   --colorWhiteOverlay: rgba(212, 210, 212, 1);
+  --colorWhatsApp: #42db87;
 }
 
 /* Navbar */
@@ -552,8 +553,8 @@ html {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 100px;
-  height: 100px;
+  width: 4em;
+  height: 4em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -571,20 +572,20 @@ html {
 }
 
 .contact_icon {
-  background-color: #42db87;
-  color: #fff;
-  width: 60px;
-  height: 60px;
+  background-color: var(--colorWhatsApp);
+  color: var(--colorWhite);
+  width: 2em;
+  height: 2em;
   font-size: 30px;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px var(--colorOffWhite);
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translatey(0px);
+  transform: translate-y(0px);
   animation: pulse 1.5s infinite;
-  box-shadow: 0 0 0 0 #42db87;
+  box-shadow: 0 0 0 0 var(--colorWhatsApp);
   -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -597,7 +598,12 @@ html {
 
 .text_icon {
   margin-top: 8px;
-  /* color: #707070; */
   color: var(--colorSecondary);
   font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .floating_btn {
+    display: none;
+  }
 }
