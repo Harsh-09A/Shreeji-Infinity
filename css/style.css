@@ -256,7 +256,6 @@ html {
 #walkthrough_section .nav > li > a {
   background: var(--colorWhite);
   color: var(--colorSecondary) !important;
-
   text-align: center;
   padding: 10px 40px;
   text-transform: uppercase;
