@@ -314,6 +314,7 @@ html {
   padding: 8px;
   text-transform: uppercase;
   border-radius: 15px 0px;
+  font-size: 1.28em;
 }
 
 .config-price a {
@@ -518,6 +519,21 @@ html {
   }
 }
 
+.form_norms {
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.download_btn {
+  color: var(--colorSecondary);
+  border-color: var(--colorSecondary);
+}
+.download_btn:hover,
+.download_btn:active {
+  border-color: var(--colorSecondary) !important;
+  background-color: var(--colorSecondary) !important;
+}
+
 /* ----------------------------------------------------------- */
 /* Thank You Page */
 
@@ -608,6 +624,11 @@ html {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .callnow_btn {
+    display: none;
+  }
+}
 /* .contact_details {
   text-align: justify;
 } */

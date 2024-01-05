@@ -16,11 +16,11 @@ Fancybox.bind('[data-fancybox="external_amenities"]', {
 });
 
 // Popup Auto
-$(window).ready(function () {
-  setTimeout(function () {
-    $("#popupModal").modal("show");
-  }, 5000);
-});
+// $(window).ready(function () {
+//   setTimeout(function () {
+//     $("#popupModal").modal("show");
+//   }, 5000);
+// });
 
 // Toggle Content Button
 function toggleContent(dotsId, moreTextId, btnId) {
