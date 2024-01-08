@@ -1,6 +1,6 @@
 (function () {
-  // emailjs.init("to9PlFrMMimgruuH0");
-  emailjs.init("BnRoAjGd5ec2E2VQn");
+  emailjs.init("to9PlFrMMimgruuH0");
+  // emailjs.init("BnRoAjGd5ec2E2VQn");
 })();
 
 // Get IP Address
@@ -24,8 +24,8 @@ const handleFormSubmit = async (formId, nameField, emailField, phoneField) => {
     contact_number: document.getElementById(phoneField).value,
     ip_address: await getIpAddress(),
 
-    to_email: "harsh.autowebbed@gmail.com",
-    company_name: "DIGIN",
+    to_email: "support@shreejiinfinity.com",
+    company_name: "Shreeji Infinity",
   };
 
   // Send Form
