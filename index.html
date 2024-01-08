@@ -41,6 +41,51 @@
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11467519304"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-11467519304");
+    </script>
+
+    <!-- Event snippet for Lead on Calls conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11467519304/qAFnCOT60oYZEMjqkdwq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Event snippet for Lead on Whatsapp conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11467519304/LYPvCOf60oYZEMjqkdwq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body
     data-bs-spy="scroll"
@@ -1128,12 +1173,12 @@
           </p>
           <div class="text-center">
             <p class="contact_details">
-              Site Address : Plot No. 87, Sector 11, Kharghar, Navi Mumbai -
-              410210
+              <b> Site Address:-</b> Plot No. 87, Sector 11, Kharghar, Navi
+              Mumbai - 410210
               <br />
-              Contact No : +919321011681
+              <b> Contact No:-</b> +91 9321011681
               <br />
-              Email Address: info@shreejiinfinity.com
+              <b> Email Address:-</b> support@shreejiinfinity.com
             </p>
           </div>
 
@@ -1274,8 +1319,12 @@
       </div>
     </div>
 
+    <!-- Floating Button -->
     <div class="floating_btn">
-      <a target="_blank" href="https://wa.me/+919321011681">
+      <a
+        target="_blank"
+        href="https://wa.me/+919321011681"
+        onclick="return gtag_report_conversion('https://wa.me/+919321011681');">
         <div class="contact_icon">
           <i class="fa-brands fa-whatsapp my-float"></i>
         </div>

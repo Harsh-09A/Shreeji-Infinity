@@ -34,6 +34,58 @@
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11467519304"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-11467519304");
+    </script>
+
+    <!-- Event snippet for Submit Lead Form conversion page Only Thank You Page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-11467519304/snN5COH60oYZEMjqkdwq",
+      });
+    </script>
+
+    <!-- Event snippet for Lead on Calls conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11467519304/qAFnCOT60oYZEMjqkdwq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Event snippet for Lead on Whatsapp conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11467519304/LYPvCOf60oYZEMjqkdwq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body
     data-bs-spy="scroll"
@@ -44,6 +96,22 @@
     tabindex="0"
     data-offset="1">
     <header class="fixed-top shadow-sm">
+      <p class="pre_header">
+        <span>
+          <a href="mailto:support@shreejiinfinity.com">
+            <i class="fa-solid fa-envelope nav-icon"></i>
+            support@shreejiinfinity.com
+          </a>
+        </span>
+        <br />
+        <span>
+          <a
+            onclick="return gtag_report_conversion('tel:+919321011681');"
+            href="tel:+919321011681">
+            <i class="fa-solid fa-phone nav-icon"></i> +91 9321011681
+          </a>
+        </span>
+      </p>
       <nav
         class="navbar navbar-expand-lg mx-auto"
         style="background-color: #ffffff"
@@ -150,6 +218,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
     <footer id="footer">
       <div class="container text-center text-white">
@@ -157,9 +226,9 @@
           <div class="qrcode">
             <img src="img/qr/qr.jpg" class="" />
             <!-- <p>
-                    SAI WORLD CITY <br />
-                    PHASE I - P52000006318
-                  </p> -->
+              SAI WORLD CITY <br />
+              PHASE I - P52000006318
+            </p> -->
           </div>
         </div>
         <div>
@@ -172,10 +241,16 @@
               >maharera.mahaonline.gov.in</a
             >
           </p>
-          <p>
-            Site Address : Plot No. 87, Sector 11, Kharghar, Navi Mumbai -
-            410210
-          </p>
+          <div class="text-center">
+            <p class="contact_details">
+              <b> Site Address:-</b> Plot No. 87, Sector 11, Kharghar, Navi
+              Mumbai - 410210
+              <br />
+              <b> Contact No:-</b> +91 9321011681
+              <br />
+              <b> Email Address:-</b> support@shreejiinfinity.com
+            </p>
+          </div>
 
           <p>
             Disclaimer : All the specification, design, facilities, dimensions,
@@ -296,7 +371,6 @@
                     <button type="submit" class="btn btn-primary submit-btn">
                       Submit
                     </button>
-
                     <p class="m-2 form_norms">
                       <span>
                         Your contact details are safe with us. <br />
@@ -313,6 +387,19 @@
           <div class="modal-footer"></div>
         </div>
       </div>
+    </div>
+
+    <!-- Floating Button -->
+    <div class="floating_btn">
+      <a
+        target="_blank"
+        href="https://wa.me/+919321011681"
+        onclick="return gtag_report_conversion('https://wa.me/+919321011681');">
+        <div class="contact_icon">
+          <i class="fa-brands fa-whatsapp my-float"></i>
+        </div>
+      </a>
+      <p class="text_icon">Talk to us?</p>
     </div>
     <!-- Jquery -->
     <script
