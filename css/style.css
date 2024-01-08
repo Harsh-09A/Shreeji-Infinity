@@ -43,6 +43,23 @@ html {
   --colorWhiteOverlay: rgba(212, 210, 212, 1);
   --colorWhatsApp: #42db87;
 }
+/* Pre-Header */
+.pre_header {
+  padding: 10px 20px;
+  background-color: var(--colorWhite);
+  margin: 0;
+  border-bottom: 1px solid var(--colorHalfBlack);
+}
+
+.pre_header a {
+  text-decoration: none !important;
+  color: var(--colorBlack) !important;
+}
+@media screen and (min-width: 1000px) {
+  .pre_header {
+    display: none;
+  }
+}
 
 /* Navbar */
 
@@ -68,6 +85,7 @@ html {
 
 .nav-icon {
   margin-right: 5px;
+  padding-left: 5px;
 }
 @media only screen and (min-width: 1000px) {
   .navbar-nav .nav-link {
